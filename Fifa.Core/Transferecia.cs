@@ -4,16 +4,11 @@ namespace Fifa.Core
 {
     public class Transferecia
     {
-        public DateTime publicacion;
-
-        public int precio;
-
-        public DateTime compra;
-
-        public Usuario idComprador;
-
-        public Usuario idVendedor;
-
-        public Futbolista idFutbolista;
+        public DateTime publicacion { get; set; }
+        public int precio { get; set; }
+        public DateTime compra { get; set; }
+        public Usuario Comprador { get; set; }
+        public Usuario Vendedor { get; set; }
+        public Futbolista idFutbolista { get; set; }
     }
 }
