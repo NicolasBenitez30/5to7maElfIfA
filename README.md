@@ -11,13 +11,13 @@
 
 ## Computación 2021
 
-**Asignatura**: <!-- Administracion y Gestion de Base de Datos -->
+**Asignatura**: Administracion y Gestion de Base de Datos
 
-**Nombre TP**: <!-- El Fifa -->
+**Nombre TP**: El Fifa
 
-**Apellido y nombre Alumno**: <!-- Benitez, Nicolas -->
+**Apellido y nombre Alumno**: Benitez, Nicolas
 
-**Curso**: <!-- 5° 7° -->
+**Curso**: 5° 7°
 
 # Título del Proyecto
 
