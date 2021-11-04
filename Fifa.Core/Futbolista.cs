@@ -5,15 +5,15 @@ namespace Fifa.Core
 {
     public class Futbolista
     {
-        public int id { get; set; }
+        public short id { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
         public DateTime nacimiento { get; set; }
-        public int velocidad { get; set; }
-        public int disparo { get; set; }
-        public int pase { get; set; }
-        public int defensa { get; set; }
-        public Posicion idPosicon { get; set; }
+        public byte velocidad { get; set; }
+        public byte disparo { get; set; }
+        public byte pase { get; set; }
+        public byte defensa { get; set; }
+        public Posicion id { get; set; }
         public List<Habilidad> habilidades { get; set }
     }
 }

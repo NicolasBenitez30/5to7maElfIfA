@@ -11,13 +11,13 @@
 
 ## Computación 2021
 
-**Asignatura**: <!-- REEMPLAZA este comentario por el nombre de la asignatura -->
+**Asignatura**: Administracion y Gestion de Base de Datos
 
-**Nombre TP**: <!-- REEMPLAZA este comentario por el nombre del TP -->
+**Nombre TP**: El Fifa
 
-**Apellido y nombre Alumno**: <!-- REEMPLAZA este comentario por tu apellido y nombre -->
+**Apellido y nombre Alumno**: Benitez, Nicolas
 
-**Curso**: <!-- REEMPLAZA este comentario por tu curso -->
+**Curso**: 5° 7°
 
 # Título del Proyecto
 
@@ -26,9 +26,9 @@ _Acá va un párrafo que describa lo que es el proyecto._
 ## Comenzando 🚀
 
 Clonar el repositorio github, desde Github Desktop o ejecutar en la terminal o CMD:
-<!-- cambia el link de abajo al de tu repositorio y BORRA ESTE COMENTARIO -->
+
 ```
-git clone https://github.com/ET12DE1Computacion/simpleTemplateCSharp
+git clone https://github.com/NicolasBenitez30/5to7maElfIfA
 ```
 
 ### Pre-requisitos 📋
@@ -44,6 +44,7 @@ _Agrega notas adicionales sobre que cosas se debe instalar, configurar y como ha
 _Menciona las herramientas y versiones que utilizaste para crear tu proyecto_
 
 * [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) - Editor de código.
+* [Visual Studio 2019](https://visualstudio.microsoft.com/es/vs/) - Entorno de desarrollo creado.
 
 ## Versionado 📌
 

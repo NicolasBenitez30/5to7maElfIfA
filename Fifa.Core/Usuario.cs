@@ -7,7 +7,7 @@ namespace Fifa.Core
         public string nombre { get; set; }
         public string apellido { get; set; }
         public string contrasena { get; set; }
-        public int monedas { get; set; }
+        public uint monedas { get; set; }
         public List<Futbolista> futbolistas { get; set; }
     }
 }
