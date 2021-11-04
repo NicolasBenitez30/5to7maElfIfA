@@ -11,13 +11,13 @@
 
 ## Computación 2021
 
-**Asignatura**: <!-- REEMPLAZA este comentario por el nombre de la asignatura -->
+**Asignatura**: <!-- Administracion y Gestion de Base de Datos -->
 
-**Nombre TP**: <!-- REEMPLAZA este comentario por el nombre del TP -->
+**Nombre TP**: <!-- El Fifa -->
 
-**Apellido y nombre Alumno**: <!-- REEMPLAZA este comentario por tu apellido y nombre -->
+**Apellido y nombre Alumno**: <!-- Benitez, Nicolas -->
 
-**Curso**: <!-- REEMPLAZA este comentario por tu curso -->
+**Curso**: <!-- 5° 7° -->
 
 # Título del Proyecto
 
