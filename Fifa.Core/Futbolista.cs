@@ -13,7 +13,7 @@ namespace Fifa.Core
         public byte disparo { get; set; }
         public byte pase { get; set; }
         public byte defensa { get; set; }
-        public Posicion id { get; set; }
-        public List<Habilidad> habilidades { get; set }
+        public Posicion idP { get; set; }
+        public List<Habilidad> habilidades { get; set; }
     }
 }
