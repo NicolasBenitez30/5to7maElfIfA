@@ -12,7 +12,7 @@ BEGIN
 END $$
 
 DELIMITER $$
-CREATE PROCEDURE altaFutbolista (unidFutbolista SMALLINT, unnombre              VARCHAR(45), unapellido VARCHAR(45), unnacimiento DATE, unvelocidad TINYINT UNSIGNED, unremate TINYINT UNSIGNED, unpase TINYINT UNSIGNED, undefensa TINYINT UNSIGNED, unidPosicion TINYINT, unidHabilidad TINYINT)
+CREATE PROCEDURE altaFutbolista (unidFutbolista SMALLINT, unnombre VARCHAR(45), unapellido VARCHAR(45), unnacimiento DATE, unvelocidad TINYINT UNSIGNED, unremate TINYINT UNSIGNED, unpase TINYINT UNSIGNED, undefensa TINYINT UNSIGNED, unidPosicion TINYINT, unidHabilidad TINYINT)
 BEGIN
     INSERT INTO Futbolista (idFutbolista, nombre, apellido, nacimiento, velocidad, remate, pase, defensa, idPosicion, idHabilidad)
                 VALUES (unidFutbolista, unnombre, unapellido, unnacimiento, unvelocidad, unremate, unpase, undefensa, unidPosicion, unidHabilidad);
@@ -51,26 +51,23 @@ CREATE PROCEDURE comprar (unpublicacion DATETIME, unidComprador MEDIUMINT)
 BEGIN
     UPDATE Transferencia
     SET compra = now(), idComprador = unidComprador    
-WHERE unidComprador = idComprador AND unpublicacion = 
-publicacion;
-
+    WHERE unidComprador = idComprador AND unpublicacion = publicacion;
 END $$
 
 DELIMITER $$
 CREATE PROCEDURE transferenciasActividas (unidFutbolista MEDIUMINT, 
-    unpublicacion DATETIME)
+                                            unpublicacion DATETIME)
 BEGIN
     SELECT idFutbolista, publicacion
-FROM Transferencia
-WHERE unidFutbolista = idFutbolista AND unpublicacion =
-publicacion
+    FROM Transferencia
+    WHERE unidFutbolista = idFutbolista AND unpublicacion = publicacion
     ORDER BY publicacion ASC;
 END $$
 
 DELIMITER $$
 CREATE FUNCTION gananciasEntre (unidFutbolista SMALLINT,
-unfechaInicio DATETIME,
-unfechaFin DATETIME)
+                                unfechaInicio DATETIME,
+                                unfechaFin DATETIME)
 RETURNS MEDIUMINT UNSIGNED
 BEGIN
     DECLARE GananciaE MEDIUMINT UNSIGNED;

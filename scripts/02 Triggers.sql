@@ -3,12 +3,11 @@ CREATE TRIGGER befInsTransferencias BEFORE INSERT ON Transferencia
 FOR EACH ROW
 BEGIN
         IF (NOT EXISTS( SELECT *
-                   FROM Posesion
+                        FROM Posesion
                         WHERE idFutbolista = new.idFutbolista
                         AND idUsuario = new.idVendedor)) THEN
                         SIGNAL SQLSTATE '45000'
-                        SET MESSAGE_TEXT = 'El usuario no posee a al 
-futbolista';
+                        SET MESSAGE_TEXT = 'El usuario no posee a al futbolista';
         END IF;
 END$$
 
@@ -17,20 +16,20 @@ CREATE TRIGGER befUpdTransferencia BEFORE UPDATE ON Transferencia
 FOR EACH ROW
 BEGIN
         IF (NOT EXISTS (SELECT idUsuario, monedas
-						FROM Usuario
-						WHERE idUsuario = NEW.idComprador
-						AND monedas < NEW.precio)) THEN
-						SIGNAL SQLSTATE '45000'
-						SET message_text = 'Monedas insuficientes';
+                        FROM Usuario
+                        WHERE idUsuario = NEW.idComprador
+                        AND monedas < NEW.precio)) THEN
+                        SIGNAL SQLSTATE '45000'
+                        SET message_text = 'Monedas insuficientes';
 		END IF;
         
         IF (EXISTS (SELECT *
-					FROM posesion
-					WHERE idUsuario = NEW.idComprador
-					AND idFutbolista = NEW.idFutbolista)) THEN
-                    SIGNAL SQLSTATE '45000'
-					SET message_text = 'Ya tienes este futbolista en Posesion, no se realiza la compra';
-		END IF;
+		        FROM posesion
+                        WHERE idUsuario = NEW.idComprador
+                        AND idFutbolista = NEW.idFutbolista)) THEN
+                        SIGNAL SQLSTATE '45000'
+                        SET message_text = 'Ya tienes este futbolista en Posesion, no se realiza la compra';
+        END IF;
 END$$
 
 DELIMITER $$
@@ -45,7 +44,7 @@ BEGIN
         SET idFutbolista = NULL
         WHERE idUsuario = NEW.idVendedor
         AND idFutbolista = NEW.idFutbolista;
-		
+	
         UPDATE Usuario
         SET monedas = monedas - NEW.precio
         WHERE idUsuario = NEW.idComprador;

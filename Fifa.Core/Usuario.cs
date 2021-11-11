@@ -12,5 +12,10 @@ namespace Fifa.Core
         public string contrasena { get; set; }
         public uint monedas { get; set; }
         public List<Futbolista> futbolistas { get; set; }
+
+        public Usuario()
+        {
+
+        }
     }
 }

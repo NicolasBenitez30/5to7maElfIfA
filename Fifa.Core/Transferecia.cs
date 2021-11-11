@@ -7,8 +7,8 @@ namespace Fifa.Core
         public DateTime publicacion { get; set; }
         public uint precio { get; set; }
         public DateTime compra { get; set; }
-        public Usuario Comprador { get; set; }
-        public Usuario Vendedor { get; set; }
-        public Futbolista id { get; set; }
+        public Usuario idComprador { get; set; }
+        public Usuario idVendedor { get; set; }
+        public Futbolista idFutbolista { get; set; }
     }
 }
