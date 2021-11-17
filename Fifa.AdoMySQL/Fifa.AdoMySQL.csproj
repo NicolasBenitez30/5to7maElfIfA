@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="et12.edu.ar.AGBD-Ado" Version="0.10.0-aplha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fifa.Core\Fifa.Core.csproj" />
+  </ItemGroup>
+
+</Project>

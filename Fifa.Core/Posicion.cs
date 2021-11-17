@@ -2,7 +2,7 @@ namespace Fifa.Core
 {
     public class Posicion
     {
-        public sbyte idP { get; set; }
-        public string posicion { get; set; }
+        public sbyte IdP { get; set; }
+        public string Posicion { get; set; }
     }
 }
