@@ -23,18 +23,26 @@ namespace Fifa.AdoMySQL.Mapeadores
         public void AltaHabiliadad(Habilidad habilidad)
             => EjecutarComandoCon("altaHabilidad", ConfigurarAltaHabiliadad, PostAltaHabilidad, habilidad);
 
-        public void ConfigurarAltaRubro(Rubro rubro)
+        public void ConfigurarAltaHabiliadad(Habiliadad habilidad)
         {
-            SetComandoSP("altaRubro");
+            SetComandoSP("altaHabilidad");
 
-            BP.CrearParametroSalida("unIdRubro")
+            BP.CrearParametroSalida("unIdHabilidad")
               .SetTipo(MySql.Data.MySqlClient.MySqlDbType.UByte)
               .AgregarParametro();
 
-            BP.CrearParametro("unRubro")
+            BP.CrearParametro("unHabilidad")
               .SetTipoVarchar(45)
-              .SetValor(rubro.Nombre)
+              .SetValor(Habiliadad.Habiliadad)
               .AgregarParametro();
         }
+
+        public void PostAltaHabilidad(Habiliadad Habiliadad)
+        {
+            var paramId = GetParametro("unId");
+            Habiliadad.Id = Convert.ToByte(paramId.Value);
+        }
+
+        public List<Habiliadad> ObtenerHabilidad() => ColeccionDesdeTabla();
     }
 }
