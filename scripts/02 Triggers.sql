@@ -1,3 +1,4 @@
+USE ElFifa $$
 DELIMITER $$
 CREATE TRIGGER befInsTransferencias BEFORE INSERT ON Transferencia
 FOR EACH ROW

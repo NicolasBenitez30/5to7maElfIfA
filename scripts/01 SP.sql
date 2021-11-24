@@ -1,3 +1,4 @@
+USE ElFifa $$
 DELIMITER $$
 CREATE PROCEDURE altaUsuario (unidUsuario MEDIUMINT, unnombreDeUsuario VARCHAR(15), unnombre VARCHAR(45), unapellido VARCHAR(45), uncontrasena CHAR(64), unmonedas MEDIUMINT UNSIGNED)
 BEGIN
@@ -19,10 +20,12 @@ BEGIN
 END $$
 
 DELIMITER $$
-CREATE PROCEDURE altaPosicion (unidPosicion TINYINT, unposicion VARCHAR(45))
+CREATE PROCEDURE altaPosicion (OUT unidPosicion TINYINT, unaPosicion VARCHAR(45))
 BEGIN
-    INSERT INTO Posicion(idPosicion, posicion)
-                VALUES (unidPosicion, unposicion);
+    INSERT INTO Posicion(posicion)
+                VALUES (unaPosicion);
+    
+    SET unidPosicion = LAST_INSERT_ID();
 END $$
 
 DELIMITER $$
@@ -33,10 +36,12 @@ BEGIN
 END $$
 
 DELIMITER $$
-CREATE PROCEDURE altaHabilidad (unidHabilidad TINYINT, unhabilidad VARCHAR(45), undescripcion VARCHAR(45))
+CREATE PROCEDURE altaHabilidad (OUT unidHabilidad TINYINT, unHabilidad VARCHAR(45), unDescripcion VARCHAR(45))
 BEGIN
-    INSERT INTO Habilidad(idHabilidad, habilidad, descripcion)
-                VALUES (unidHabilidad, unhabilidad, undescripcion);
+    INSERT INTO Habilidad(habilidad, descripcion)
+                VALUES (unHabilidad, unDescripcion);
+                
+    SET unidHabilidad = LAST_INSERT_ID();
 END $$
 
 DELIMITER $$

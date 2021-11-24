@@ -13,13 +13,13 @@
 
 **Asignatura**: Administracion y Gestion de Base de Datos
 
-**Nombre TP**: El Fifa
+**Nombre TP**: Fifa
 
 **Apellido y nombre Alumno**: Benitez, Nicolas
 
 **Curso**: 5° 7°
 
-# Título del Proyecto
+# Fifa
 
 _Acá va un párrafo que describa lo que es el proyecto._
 

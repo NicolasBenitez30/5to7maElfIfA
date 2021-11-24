@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS ElFifa;
 CREATE DATABASE ElFifa;
 
 CREATE TABLE ElFifa.Usuario(
-    idUsuario MEDIUMINT NOT NULL,
+    idUsuario MEDIUMINT AUTO_INCREMENT,
     nombreDeUsuario VARCHAR(15) NOT NULL,
     nombre VARCHAR(45) NOT NULL,
     apellido VARCHAR(45) NOT NULL,
@@ -13,14 +13,14 @@ CREATE TABLE ElFifa.Usuario(
 );
 
 CREATE TABLE ElFifa.Posicion(
-    idPosicion TINYINT NOT NULL,
+    idPosicion TINYINT AUTO_INCREMENT,
     posicion VARCHAR(45) NOT NULL,
     PRIMARY KEY (idPosicion),
     CONSTRAINT UQ_Posicion_posicion UNIQUE (posicion)
 );
 
 CREATE TABLE ElFifa.Habilidad(
-    idHabilidad TINYINT NOT NULL,
+    idHabilidad TINYINT AUTO_INCREMENT,
     habilidad VARCHAR(45) NOT NULL,
     descripcion VARCHAR(45) NULL,
     PRIMARY KEY (idHabilidad),
@@ -28,7 +28,7 @@ CREATE TABLE ElFifa.Habilidad(
 );
 
 CREATE TABLE ElFifa.Futbolista(
-    idFutbolista SMALLINT NOT NULL,
+    idFutbolista SMALLINT AUTO_INCREMENT,
     nombre VARCHAR(45) NOT NULL,
     apellido VARCHAR(45) NOT NULL,
     nacimiento DATE NOT NULL,

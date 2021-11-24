@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Fifa.Core;
 
-namespace 
+namespace Fifa.Core
 {
     public interface IAdo
     {
@@ -10,7 +9,7 @@ namespace
         void AltaHabiliadad(Habilidad Habilidad);
 
         List<Posicion> ObtenerPosiciones();
-        List<Habilidades> ObtenerHabilidades();
+        List<Habilidad> ObtenerHabilidades();
 
     }
 }

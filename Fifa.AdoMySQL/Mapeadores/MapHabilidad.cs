@@ -3,6 +3,7 @@ using et12.edu.ar.AGBD.Ado;
 using System;
 using System.Data;
 using System.Collections.Generic;
+using Fifa.Core;
 
 namespace Fifa.AdoMySQL.Mapeadores
 {
@@ -10,20 +11,20 @@ namespace Fifa.AdoMySQL.Mapeadores
     {
         public MapHabilidad(AdoAGBD ado):base(ado)
         {
-            Tabla = "Habiliadad";
+            Tabla = "Habilidad";
         }
         public override Habilidad ObjetoDesdeFila(DataRow fila)
             => new Habilidad()
             {
-                Id = Convert.ToByte(fila["idHabilidad"]),
-                Habilidad = fila["habilidad"].ToString(),
+                Id = Convert.ToSByte(fila["idHabilidad"]),
+                Nombre = fila["habilidad"].ToString(),
                 Descripcion = fila["descripcion"].ToString()
             };
 
-        public void AltaHabiliadad(Habilidad habilidad)
-            => EjecutarComandoCon("altaHabilidad", ConfigurarAltaHabiliadad, PostAltaHabilidad, habilidad);
+        public void AltaHabilidad(Habilidad habilidad)
+            => EjecutarComandoCon("altaHabilidad", ConfigurarAltaHabilidad, PostAltaHabilidad, habilidad);
 
-        public void ConfigurarAltaHabiliadad(Habiliadad habilidad)
+        public void ConfigurarAltaHabilidad(Habilidad habilidad)
         {
             SetComandoSP("altaHabilidad");
 
@@ -33,16 +34,22 @@ namespace Fifa.AdoMySQL.Mapeadores
 
             BP.CrearParametro("unHabilidad")
               .SetTipoVarchar(45)
-              .SetValor(Habiliadad.Habiliadad)
+              .SetValor(habilidad.Nombre)
               .AgregarParametro();
+
+            BP.CrearParametro("unDescripcion")
+              .SetTipoVarchar(45)
+              .SetValor(habilidad.Descripcion)
+              .AgregarParametro();
+
         }
 
-        public void PostAltaHabilidad(Habiliadad Habiliadad)
+        public void PostAltaHabilidad(Habilidad Habilidad)
         {
-            var paramId = GetParametro("unId");
-            Habiliadad.Id = Convert.ToByte(paramId.Value);
+            var paramId = GetParametro("unIdHabilidad");
+            Habilidad.Id = Convert.ToSByte(paramId.Value);
         }
 
-        public List<Habiliadad> ObtenerHabilidad() => ColeccionDesdeTabla();
+        public List<Habilidad> ObtenerHabilidades() => ColeccionDesdeTabla();
     }
 }

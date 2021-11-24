@@ -1,3 +1,4 @@
+USE ElFifa $$
 -- Administrador --
 DROP USER IF EXISTS 'administrador'@'localhost';
 CREATE USER 'administrador'@'localhost' IDENTIFIED BY 'passadministrador';
