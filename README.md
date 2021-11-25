@@ -21,7 +21,8 @@
 
 # Fifa
 
-_Acá va un párrafo que describa lo que es el proyecto._
+Proyecto para Administracion y Gestion de base de Datos 2021
+Lo hice con mucho amor. #besitos #AaguanteMESSI #LaSCALONETA 
 
 ## Comenzando 🚀
 
@@ -37,11 +38,17 @@ git clone https://github.com/NicolasBenitez30/5to7maElfIfA
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre que cosas se debe instalar, configurar y como hacer deploy_
+Desde la carpeta scripts logguearse en la cuenta root y correr los scripts con:
+```bash
+Source install.sql
+```
+
+Situarse en la carpeta Admin.Consola y poner:
+```bash
+dotnet run
+```
 
 ## Construido con 🛠️
-
-_Menciona las herramientas y versiones que utilizaste para crear tu proyecto_
 
 * [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) - Editor de código.
 * [Visual Studio 2019](https://visualstudio.microsoft.com/es/vs/) - Entorno de desarrollo creado.
@@ -52,10 +59,8 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Max Power** - *Desarrollo* - [Maxpower](https://github.com/maxpower)
-* **Cosme Fulanito** - *Documentación* - [Cosmefulanito](#Cosmefulanito)
+* **Nicolas Benitez** - *Desarrollo* - [Nicolas Benitez](https://github.com/NicolasBenitez30)
+* **Nicolas Benitez** - *Documentación* - [Nicolas Benitez](#NicolasBenitez)
 
 ## Licencia 📄
 
