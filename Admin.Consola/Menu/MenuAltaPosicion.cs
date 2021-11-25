@@ -4,10 +4,9 @@ using et12.edu.ar.MenuesConsola;
 
 namespace Admin.Consola.Menu
 {
-    public class MenuAltaPosicion: MenuComponente
+    public class MenuAltaPosicion : MenuComponente
     {
-        public Posicion Posicion { get; set;}
-
+        public Posicion Posicion { get; set; }
         public override void mostrar()
         {
             base.mostrar();

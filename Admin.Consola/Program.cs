@@ -17,7 +17,7 @@ namespace Admin.Consola
 
             var MenuAltaHabilidad = new MenuAltaHabilidad() { Nombre = "Alta Habilidad" };
             var MenuListaHabilidad = new MenuListaHabilidad() { Nombre = "Listado Habilidades" };
-            var MenuAltaPosicion = new MenuListaPosicion() { Nombre = "Alta Posicion" };
+            var MenuAltaPosicion = new MenuAltaPosicion() { Nombre = "Alta Posicion" };
             var MenuListaPosicion = new MenuListaPosicion() { Nombre = "Listado Posiciones" };
 
             var menuHabilidad = new MenuCompuesto() { Nombre = "Habilidades" };

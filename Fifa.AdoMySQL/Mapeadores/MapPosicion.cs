@@ -28,7 +28,7 @@ namespace Fifa.AdoMySQL.Mapeadores
         {
             SetComandoSP("altaPosicion");
 
-            BP.CrearParametroSalida("unidPosicon")
+            BP.CrearParametroSalida("unidPosicion")
               .SetTipo(MySql.Data.MySqlClient.MySqlDbType.UByte)
               .AgregarParametro();
 
