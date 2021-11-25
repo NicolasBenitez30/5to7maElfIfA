@@ -1,7 +1,7 @@
 <!-- Completa abajo cambiando ET12DE1Computacion a tu user|organización y template a tu repo, te recomiendo usar el Find & Replace de tu editor -->
-![main build.NET5](https://github.com/ET12DE1Computacion/simpleTemplateCSharp/workflows/main-build.NET5/badge.svg?branch=main) ![main test.NET5](https://github.com/ET12DE1Computacion/simpleTemplateCSharp/workflows/main-test.NET5/badge.svg?branch=main)
-![dev build.NET5](https://github.com/ET12DE1Computacion/simpleTemplateCSharp/workflows/dev-build.NET5/badge.svg?branch=dev) ![dev test.NET5](https://github.com/ET12DE1Computacion/simpleTemplateCSharp/workflows/dev-test.NET5/badge.svg?branch=dev)
-[![Abrir en Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/ET12DE1Computacion/simpleTemplateCSharp)
+![main build.NET5](https://github.com/NicolasBenitez30/5to7maElfIfA/workflows/main-build.NET5/badge.svg?branch=main) ![main test.NET5](https://github.com/NicolasBenitez30/5to7maElfIfA/workflows/main-test.NET5/badge.svg?branch=main)
+![dev build.NET5](https://github.com/NicolasBenitez30/5to7maElfIfA/workflows/dev-build.NET5/badge.svg?branch=dev) ![dev test.NET5](https://github.com/NicolasBenitez30/5to7maElfIfA/workflows/dev-test.NET5/badge.svg?branch=dev)
+[![Abrir en Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/NicolasBenitez30/5to7maElfIfA)
 <!-- Borra este comentario y linea después haber cambiado arriba las ocurrencias de tu usuario/repo -->
 
 <h1 align="center">E.T. Nº12 D.E. 1º "Libertador Gral. José de San Martín"</h1>
@@ -11,24 +11,25 @@
 
 ## Computación 2021
 
-**Asignatura**: <!-- REEMPLAZA este comentario por el nombre de la asignatura -->
+**Asignatura**: Administracion y Gestion de Base de Datos
 
-**Nombre TP**: <!-- REEMPLAZA este comentario por el nombre del TP -->
+**Nombre TP**: Fifa
 
-**Apellido y nombre Alumno**: <!-- REEMPLAZA este comentario por tu apellido y nombre -->
+**Apellido y nombre Alumno**: Benitez, Nicolas
 
-**Curso**: <!-- REEMPLAZA este comentario por tu curso -->
+**Curso**: 5° 7°
 
-# Título del Proyecto
+# Fifa
 
-_Acá va un párrafo que describa lo que es el proyecto._
+Proyecto para Administracion y Gestion de base de Datos 2021
+Lo hice con mucho amor. #besitos #AaguanteMESSI #LaSCALONETA 
 
 ## Comenzando 🚀
 
 Clonar el repositorio github, desde Github Desktop o ejecutar en la terminal o CMD:
-<!-- cambia el link de abajo al de tu repositorio y BORRA ESTE COMENTARIO -->
+
 ```
-git clone https://github.com/ET12DE1Computacion/simpleTemplateCSharp
+git clone https://github.com/NicolasBenitez30/5to7maElfIfA
 ```
 
 ### Pre-requisitos 📋
@@ -37,13 +38,20 @@ git clone https://github.com/ET12DE1Computacion/simpleTemplateCSharp
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre que cosas se debe instalar, configurar y como hacer deploy_
+Desde la carpeta scripts logguearse en la cuenta root y correr los scripts con:
+```bash
+Source install.sql
+```
+
+Situarse en la carpeta Admin.Consola y poner:
+```bash
+dotnet run
+```
 
 ## Construido con 🛠️
 
-_Menciona las herramientas y versiones que utilizaste para crear tu proyecto_
-
 * [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) - Editor de código.
+* [Visual Studio 2019](https://visualstudio.microsoft.com/es/vs/) - Entorno de desarrollo creado.
 
 ## Versionado 📌
 
@@ -51,10 +59,8 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Max Power** - *Desarrollo* - [Maxpower](https://github.com/maxpower)
-* **Cosme Fulanito** - *Documentación* - [Cosmefulanito](#Cosmefulanito)
+* **Nicolas Benitez** - *Desarrollo* - [Nicolas Benitez](https://github.com/NicolasBenitez30)
+* **Nicolas Benitez** - *Documentación* - [Nicolas Benitez](#NicolasBenitez)
 
 ## Licencia 📄
 
